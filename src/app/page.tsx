@@ -1,3 +1,4 @@
+import LatestWork from "@/components/LatestWork";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,8 +10,10 @@ export default function Home() {
           <h3 className="text-xl">A Full Stack Developer</h3>
         </div>
         <div>
-
         </div>
+      </section>
+      <section>
+        <LatestWork />
       </section>
     </main>
   );
