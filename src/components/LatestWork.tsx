@@ -1,45 +1,46 @@
 import React from 'react'
 
 const LatestWork = () => {
+    const skills = [
+        { name: '#React.js' },
+        { name: '#JavaScript' },
+        { name: '#Tailwind CSS' },
+        { name: '#Node.js' },
+        { name: '#Express.js' },
+        { name: '#MongoDB' },
+        { name: '#Mongoose' },
+        { name: '#ejs' },
+        { name: '#MongoDBAtlas' },
+    ]
     return (
         <div>
-            <div className='w-full flex justify-between gap-10 '>
-                <div>
-                    image
+            <div className='w-full grid grid-cols-2 justify-between gap-10 '>
+                <div className=''>
+
+                    <div className='w-[50%] bg-red-600 aspect-video rounded-md'>
+                        image
+                    </div>
                 </div>
                 {/* left ends  */}
-                <div className=''>
-                    <h3 className='text-xl font-bold'>Project Name like 'MyClass'</h3>
-                    <strong>project title  like 'institute site'</strong>
+                <div className='flex flex-col gap-4'>
+                    <div>
+                        <h3 className='text-xl font-bold pb-1'>Project Name like 'MyClass'</h3>
+                        <strong>project title  like 'institute site'</strong>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!</p>
-                    <div className='flex gap-10 flex-wrap'>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #React.js
-                        </div>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #JavaScript
-                        </div>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #Tailwind CSS
-                        </div>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #Node.js
-                        </div>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #Express.js
-                        </div>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #MongoDB
-                        </div>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #Mongoose
-                        </div>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #ejs
-                        </div>
-                        <div className='w-fit border-[2px] py-1 px-6 font-semibold bg-white text-black rounded-full '>
-                            #MongoDBAtlas
-                        </div>
+                    <div className='flex gap-5 flex-wrap'>
+
+                        {
+                            skills.map((field) => (
+
+                                <div
+                                    className='w-fit border-[2px] py-1 px-6 text-sm font-semibold bg-white rounded-full text-gray-600'
+                                    key={field.name}
+                                >
+                                    {field.name}
+                                </div>
+                            ))
+                        }
 
 
                     </div>
