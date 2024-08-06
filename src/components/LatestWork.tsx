@@ -28,8 +28,7 @@ const LatestWork = () => {
                         <strong>project title  like 'institute site'</strong>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!</p>
-                    <div className='flex gap-5 flex-wrap'>
-
+                    <div className='flex gap-3 flex-wrap'>
                         {
                             skills.map((field) => (
 
@@ -41,8 +40,6 @@ const LatestWork = () => {
                                 </div>
                             ))
                         }
-
-
                     </div>
                 </div>
             </div>
