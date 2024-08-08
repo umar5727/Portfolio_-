@@ -8,6 +8,7 @@ export default function Home() {
         <div className="flex flex-col gap-2 justify-center">
           <h1 className="text-5xl">Hy! I am Umar</h1>
           <h3 className="text-xl">A Full Stack Developer</h3>
+          <p>I use  MERN Stack to Build Modern development</p>
         </div>
         {/* left ends  */}
         <div className="flex justify-center items-center ">
