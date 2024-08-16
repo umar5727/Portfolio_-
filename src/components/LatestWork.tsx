@@ -13,36 +13,39 @@ const LatestWork = () => {
         { name: '#MongoDBAtlas' },
     ]
     const work = [
-        { image: '#', name: 'Project Name like MyClass', title: 'project title  like Institute Site', details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!' },
-        { image: '#', name: 'Project Name like MyClass', title: 'project title  like Institute Site', details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!' },
-        { image: '#', name: 'Project Name like MyClass', title: 'project title  like Institute Site', details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!' },
+        { id: 0, image: '#', name: 'Project Name like MyClass', title: 'project title  like Institute Site', details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!' },
+        { id: 1, image: '#', name: 'Project Name like MyClass', title: 'project title  like Institute Site', details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!' },
+        { id: 2, image: '#', name: 'Project Name like MyClass', title: 'project title  like Institute Site', details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!' },
 
     ]
     return (
         <div className=''>
+            <div className='text-center'>
+                <h2 className='text-5xl font-bold'>Projects</h2>
+            </div>
             {
-                work.map((field) => (
+                work.map((field, index) => (
                     <div
-                        className='w-full grid grid-cols-2 justify-between gap-10 mt-28'
+                        className='w-full flex  justify-between mt-28'
                         key={field.name}
                     >
-                        <div className=''>
+                        <div className={`${field.id % 2 === 0 ? ' border-r-2  ' : ' border-l-2   justify-end order-2'} flex w-1/2`}>
                             <div className='w-[50%] bg-red-600 aspect-video rounded-md'>
                                 <img src={field.image} alt={field.name} />
                             </div>
                         </div>
                         {/* left ends  */}
-                        <div className='flex flex-col gap-4'>
-                            <div>
+                        <div className={`flex flex-col gap-4 w-1/2 ${field.id % 2 === 0 ? ' pl-10' : ' pr-10'}`} >
+                            <div >
                                 <h3 className='text-xl font-bold pb-1'>{field.name}</h3>
-                                <strong>{field.title}</strong>
+                                <strong className='text-sm'>{field.title}</strong>
                             </div>
-                            <p>{field.details}</p>
+                            <p className='text-sm'>{field.details}</p>
                             <div className='flex gap-3 flex-wrap'>
                                 {
                                     skills.map((skill) => (
                                         <div
-                                            className='w-fit border-[2px] py-1 px-4 text-xs font-semibold bg-white rounded-full text-gray-600'
+                                            className='w-fit border-[2px] py-[2px] px-4 text-xs font-semibold bg-white rounded-full text-gray-600'
                                             key={skill.name}
                                         >
                                             {skill.name}
