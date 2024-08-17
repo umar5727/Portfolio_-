@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import LatestWork from "@/components/LatestWork";
 import Image from "next/image";
@@ -28,6 +29,9 @@ export default function Home() {
       </section>
       <section>
         <LatestWork />
+      </section>
+      <section className="my-10">
+        <Contact />
       </section>
     </main>
   );
