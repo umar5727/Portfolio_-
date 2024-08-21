@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LatestWork = () => {
+function LatestWork(){
     const skills = [
         { name: '#React.js' },
         { name: '#JavaScript' },
@@ -27,7 +27,7 @@ const LatestWork = () => {
                 work.map((field, index) => (
                     <div
                         className='w-full flex  justify-between mt-28'
-                        key={field.name}
+                        key={field.id}
                     >
                         <div className={`${field.id % 2 === 0 ? ' border-r-2  ' : ' border-l-2   justify-end order-2'} flex w-1/2`}>
                             <div className='w-[50%] bg-red-600 aspect-video rounded-md'>
