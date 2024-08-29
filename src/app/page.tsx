@@ -38,7 +38,17 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
-          <button className="px-4 py-1 bg-purple-800 rounded-md">Latest Work</button>
+          <PopUp>
+            <motion.div
+            whileTap={{scale:'1.2'}}
+            >
+              <button
+                className="px-4 py-1 bg-purple-800 rounded-md"
+              
+                >Latest Work
+              </button>
+            </motion.div>
+          </PopUp>
         </div>
       </section>
       <section>
