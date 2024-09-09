@@ -45,7 +45,7 @@ function LatestWork(){
                                 {
                                     skills.map((skill) => (
                                         <div
-                                            className='w-fit border-[2px] py-[2px] px-4 text-xs font-semibold bg-white rounded-full text-gray-600'
+                                            className='w-fit border-[2px] py-[2px] px-4 text-xs font-semibold bg-white rounded-full text-slate-900'
                                             key={skill.name}
                                         >
                                             {skill.name}

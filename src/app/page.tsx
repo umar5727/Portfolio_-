@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import LatestWork from "@/components/LatestWork";
 import Image from "next/image";
 import { PopUp } from "@/motion/PopUp";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
@@ -26,8 +27,12 @@ export default function Home() {
               </PopUp>
           
           <div className="flex flex-col gap-2 items-start mt-2">
-            <button className="px-4 py-1 bg-purple-800 rounded-md">About Me</button>
-            <button className="px-4 py-1 bg-purple-800 rounded-md">Resume</button>
+            {/* <button className="px-4 py-1 bg-purple-800 rounded-md hover:text-purple-800 hover:bg-white text-white font-semibold">About Me</button> */}
+            <Button>
+              About Me
+            </Button>
+
+            <Button>Resume</Button>
           </div>
         </div>
         {/* left ends  */}
@@ -42,11 +47,9 @@ export default function Home() {
             <motion.div
             whileTap={{scale:'1.2'}}
             >
-              <button
-                className="px-4 py-1 bg-purple-800 rounded-md"
-              
-                >Latest Work
-              </button>
+              <Button>
+                Latest Work
+              </Button>
             </motion.div>
           </PopUp>
         </div>
