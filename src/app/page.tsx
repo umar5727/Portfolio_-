@@ -32,7 +32,7 @@ export default function Home() {
               About Me
             </Button>
 
-            <Button>Resume</Button>
+            <Button className="bg-red-600" >Resume</Button>
           </div>
         </div>
         {/* left ends  */}
