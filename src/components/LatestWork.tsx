@@ -41,7 +41,7 @@ function LatestWork(){
                                 <strong className='text-sm'>{field.title}</strong>
                             </div>
                             <p className='text-sm'>{field.details}</p>
-                            <div className='flex gap-3 flex-wrap'>
+                            <div className='flex gap-2 flex-wrap w-4/5'>
                                 {
                                     skills.map((skill) => (
                                         <div

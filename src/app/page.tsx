@@ -47,7 +47,7 @@ export default function Home() {
             <motion.div
             whileTap={{scale:'1.2'}}
             >
-              <Button className="!text-orange-800 !px-10" >
+              <Button className="duration-300 hover:text-orange-800 px-10 py-2 hover:font-extrabold" >
                 Latest Work
               </Button>
             </motion.div>
