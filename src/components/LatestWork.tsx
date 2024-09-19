@@ -30,9 +30,10 @@ function LatestWork(){
                         className='w-full flex  justify-between mt-28'
                         key={field.id}
                     >
-                        <div className={`${field.id % 2 === 0 ? ' border-r-2  ' : ' border-l-2   justify-end order-2'} flex w-1/2`}>
-                            <div className='w-[50%] bg-red-600 aspect-video rounded-md'>
+                        <div className={` ${field.id % 2 === 0 ? ' border-r-2  ' : ' border-l-2 justify-end order-2'} flex w-1/2  `}>
+                            <div className='group w-[50%] bg-red-600 aspect-video rounded-md relative z-20'>
                                 <img src={field.image} alt={field.name} />
+                                <div className='bg-[#fc815c] px-4 py-1 absolute top-1 left-1/2 -translate-x-1/2 rounded-md ease-jump duration-300 group-hover:-top-11 -z-10 after:w-4 after:h-4 after:bg-inherit after:rotate-45 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 '>Lets Work</div>
                             </div>
                         </div>
                         {/* left ends  */}
