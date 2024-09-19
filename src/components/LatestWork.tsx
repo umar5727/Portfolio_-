@@ -11,6 +11,7 @@ function LatestWork(){
         { name: '#Mongoose' },
         { name: '#ejs' },
         { name: '#MongoDBAtlas' },
+        { name: '#Swagger UI' },
     ]
     const work = [
         { id: 0, image: '#', name: 'Project Name like MyClass', title: 'project title  like Institute Site', details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto!' },
