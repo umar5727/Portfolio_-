@@ -7,9 +7,10 @@ function LatestWork(){
         { name: '#Tailwind CSS' },
         { name: '#Node.js' },
         { name: '#Express.js' },
+        { name: '#ejs' },
         { name: '#MongoDB' },
         { name: '#Mongoose' },
-        { name: '#ejs' },
+       
         { name: '#MongoDBAtlas' },
         { name: '#Swagger UI' },
     ]
@@ -20,20 +21,20 @@ function LatestWork(){
 
     ]
     return (
-        <div className=''>
+        <div className='flex flex-col gap-20'>
             <div className='text-center'>
                 <h2 className='text-5xl font-bold'>Projects</h2>
             </div>
             {
                 work.map((field, index) => (
                     <div
-                        className='w-full flex  justify-between mt-28'
+                        className='w-full flex  justify-between '
                         key={field.id}
                     >
                         <div className={` ${field.id % 2 === 0 ? ' border-r-2  ' : ' border-l-2 justify-end order-2'} flex w-1/2  `}>
                             <div className='group w-[50%] bg-red-600 aspect-video rounded-md relative z-20'>
                                 <img src={field.image} alt={field.name} />
-                                <div className='bg-[#fc815c] px-4 py-1 absolute top-1 left-1/2 -translate-x-1/2 rounded-md ease-jump duration-300 group-hover:-top-11 -z-10 after:w-4 after:h-4 after:bg-inherit after:rotate-45 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 '>Lets Work</div>
+                                <div className='bg-primary text-black px-4 py-1 absolute top-1 left-1/2 -translate-x-1/2 rounded-md ease-jump duration-300 group-hover:-top-11 -z-10 after:w-4 after:h-4 after:bg-inherit after:rotate-45 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 font-bold '>Lets Work</div>
                             </div>
                         </div>
                         {/* left ends  */}
@@ -43,11 +44,11 @@ function LatestWork(){
                                 <strong className='text-sm'>{field.title}</strong>
                             </div>
                             <p className='text-sm'>{field.details}</p>
-                            <div className='flex gap-2 flex-wrap w-4/5'>
+                            <div className='flex gap-2 flex-wrap '>
                                 {
                                     skills.map((skill) => (
                                         <div
-                                            className='w-fit border-[2px] py-[2px] px-4 text-xs font-semibold bg-white rounded-full text-slate-900'
+                                            className='w-fit border-[2px] border-gray-600 py-[4px] px-4 text-xs font-semibold text-white rounded-full bg-transparent'
                                             key={skill.name}
                                         >
                                             {skill.name}
